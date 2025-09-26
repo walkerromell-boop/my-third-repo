@@ -1,7 +1,16 @@
 package com.pluralsight;
 
+import java.util.Scanner;
+
 public class StringFormat {
     public static void main(String[] args) {
+    Scanner scanner= new Scanner(System.in);
+        System.out.println("First name: ");
+        String firstname= scanner.nextLine();
+        System.out.println("What's up "+firstname);
+        scanner.nextLine();
+
+
         String name = "Alice";
         int age = 25;
         double gpa = 3.6789;
