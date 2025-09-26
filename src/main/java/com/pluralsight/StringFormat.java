@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringFormat {
@@ -8,7 +9,23 @@ public class StringFormat {
         System.out.println("First name: ");
         String firstname= scanner.nextLine();
         System.out.println("What's up "+firstname);
-        scanner.nextLine();
+
+
+        System.out.print("How old are you?");
+        int number= scanner.nextInt(); // this Reads an integer from the user typing
+        System.out.println("Age: "+number);
+
+
+        System.out.print("How tall are you?");
+        double meters= scanner.nextDouble(); //using this for the height in meters
+        System.out.println("You are "+meters);
+
+        System.out.println("Do you like Java? true or false");
+        boolean answer = scanner.hasNextBoolean(); // this is checking for true or false answer
+        System.out.printf("Your first name is %s "+","+"age:%d"+", your height is %.2f"+", and you like java:%b%n",firstname,number,meters,answer);
+
+
+
 
 
         String name = "Alice";
